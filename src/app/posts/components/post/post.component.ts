@@ -10,8 +10,7 @@ type PostSimple = Partial<Post>
   selector: 'tr[app-component-post]',
   templateUrl: './post.component.html',
 })
-export class PostComponent
-{
+export class PostComponent {
   @Input() post: PostSimple = {
     id: "",
     name: ""

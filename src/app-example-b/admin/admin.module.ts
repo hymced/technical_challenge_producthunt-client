@@ -14,4 +14,4 @@ import { UserComponent, RightsComponent, DashboardComponent, AdminComponent } fr
   ],
   providers: [],
 })
-export class AdminModule { }
+export class AdminModule {}

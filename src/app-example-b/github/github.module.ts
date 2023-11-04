@@ -14,4 +14,4 @@ import { SharedModule } from '../shared';
   ],
   declarations: [RepoListComponent]
 })
-export class GithubModule { }
+export class GithubModule {}

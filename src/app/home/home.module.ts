@@ -16,5 +16,4 @@ import { SharedModule } from '../shared';
     AboutComponent,
     HomeComponent]
 })
-export class HomeModule { 
-}
+export class HomeModule {}

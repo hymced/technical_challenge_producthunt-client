@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
     <h1>Welcome To Product Hunt Posts Viewer!</h1>
   `,
 })
-export class HomeComponent {
-}
+export class HomeComponent {}
