@@ -8,7 +8,6 @@ import {MatNativeDateModule} from '@angular/material/core';
 @Component({
   selector: 'app-component-datepicker',
   templateUrl: './datepicker.component.html',
-  styleUrls: ['./datepicker.component.scss'],
   standalone: true,
   imports: [
     MatFormFieldModule, 
