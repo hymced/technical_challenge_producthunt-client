@@ -1,0 +1,22 @@
+<h2>test works!</h2>
+
+<p>Welcome, {{userName}} (this is a template expression with {{"{{}}"}} interpolation syntax)</p>
+
+<h1 [innerText]="title"></h1>
+<button [disabled]="isDisabled">I am disabled</button>
+
+<button [attr.aria-label]="closeLabel" (click)="closeMe()">X {{ parentMessage }}</button>
+
+<h2>2-way binding example</h2>
+<input type="text" [value]="name" (input)="name=$any($event.target).value">
+<p> You entered {{name}}</p>
+<button (click)="clearName()">Clear</button>
+
+<h2>2-way biding with ngModel directive</h2>
+<input type="text" name="value" [(ngModel)]="value">
+<p> You entered {{value}}</p>
+<button (click)="clearValue()">Clear</button>
+
+<h2>listening to count component event</h2>
+<app-test-counter (countChange)="onCounterChanged($event)"></app-test-counter>
+<div>{{ updatedCounter }}</div>
