@@ -7,7 +7,7 @@ type Post = PostsData["posts"]["edges"][number]["node"]
 type PostSimple = Partial<Post>
 
 @Component({
-  selector: 'app-component-post',
+  selector: 'tr[app-component-post]',
   templateUrl: './post.component.html',
 })
 export class PostComponent

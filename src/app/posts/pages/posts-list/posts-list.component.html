@@ -24,9 +24,7 @@
     </tr>
 </thead>
 <tbody>
-    <tr *ngFor="let edge of postsData?.posts?.edges">
-        <td>{{edge.node.id}}</td>
-        <td>{{edge.node.name}}</td>
+    <tr app-component-post *ngFor="let edge of postsData?.posts?.edges" [post]="edge.node">
     </tr>
 </tbody>
 </table>
