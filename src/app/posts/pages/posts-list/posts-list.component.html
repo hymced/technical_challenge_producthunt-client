@@ -1,15 +1,6 @@
 <h1 class="heading"><strong>Product Posts By Date</strong></h1>
 
-<app-component-datepicker></app-component-datepicker>
-
-<div class="form-group">
-    <label for="userName">Date</label>
-    <input type="text" class="form-control" name="date" [(ngModel)]="date">
-</div>
-
-<div class="form-group">
-    <button type="button" (click)="getPosts()">Get Posts</button>
-</div>
+<app-component-datepicker [callback]="callback"></app-component-datepicker>
 
 <div *ngIf="loading">Loading posts...</div>
 
@@ -23,6 +14,8 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>URL</th>
+        <th>Website</th>
     </tr>
 </thead>
 <tbody>

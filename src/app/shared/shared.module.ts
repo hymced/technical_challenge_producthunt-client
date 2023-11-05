@@ -1,9 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent, FooterComponent } from './layout';
+import { DateToISOPipe, DateToTime24Pipe } from './pipes';
+import { } from './directives';
 
 @NgModule({
   imports: [
@@ -11,11 +14,13 @@ import { HeaderComponent, FooterComponent } from './layout';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
   ],
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DateToISOPipe,
+    DateToTime24Pipe,
   ],
   exports: [
     CommonModule,
@@ -23,7 +28,9 @@ import { HeaderComponent, FooterComponent } from './layout';
     ReactiveFormsModule,
     RouterModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DateToISOPipe,
+    DateToTime24Pipe,
   ]
 })
-export class SharedModule {}
+export class SharedModule {};

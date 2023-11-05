@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
  
 import { PostsData } from '../models';
@@ -9,11 +9,11 @@ import { PostsData } from '../models';
  })
 export class PostsService { 
    baseURL:string="http://localhost:5000/api/";
- 
-   constructor(private http:HttpClient){
-   }
- 
+
+   constructor(private http:HttpClient) {};
+
    getPosts(date:string): Observable<PostsData> {
-        return this.http.get<PostsData>(this.baseURL + 'posts/')
+      const params = new HttpParams().set('date', date);
+      return this.http.get<PostsData>(this.baseURL + 'posts/', { params });
    }
 }

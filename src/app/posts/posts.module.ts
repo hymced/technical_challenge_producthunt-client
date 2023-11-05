@@ -3,7 +3,8 @@ import { PostsRoutingModule } from './posts-routing.module';
 
 import { PostsListComponent } from './pages';
 import { PostComponent } from './components/post/post.component';
-import { DatepickerComponent } from './components/datepicker/datepicker.component';
+
+import { DatepickerComponent } from './components/datepicker/datepicker.component'; // standalone module
 
 import { SharedModule } from '../shared';
 
@@ -12,7 +13,7 @@ import { SharedModule } from '../shared';
     PostsRoutingModule,
     SharedModule,
 
-    DatepickerComponent
+    DatepickerComponent, // standalone module
   ],
   providers: [
   ],

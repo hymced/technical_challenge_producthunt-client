@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
     <a href="https://github.com/hymced" target="_blank">My GitHub account</a>
   `,
 })
-export class AboutComponent {
-}
+export class AboutComponent {};

@@ -51,5 +51,4 @@ notes.md
 *.docu[0-9]*.ts
 *.docu[0-9]*.html
 /vscode.backup
-/src/app-example-structure
-/src/app-example-structure-2
+src/app/app-test*

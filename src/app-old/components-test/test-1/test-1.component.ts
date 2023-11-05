@@ -17,14 +17,14 @@ export class Test1Component {
     window.alert(this.parentMessage);
   }
 
-  name=""
-  clearName() {
-    this.name="";
+  text1=""
+  clearText1() {
+    this.text1="";
   }
 
-  value="";
-  clearValue() {
-    this.value="";
+  text2="";
+  clearText2() {
+    this.text2="";
   }
 
   updatedCounter: number = 0;

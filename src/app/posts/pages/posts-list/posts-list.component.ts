@@ -8,13 +8,20 @@ import { PostsData } from '../../../core';
 })
 export class PostsListComponent {
 
-  date: string ="2023-10-30T00:00:00Z";
+  date: string = (new Date()).toISOString();
   postsData: PostsData | null;
 
   loading: boolean=false;
   errorMessage: any;
 
-  constructor(private postsService: PostsService) {}
+  constructor(private postsService: PostsService) {
+    this.callback = this.callback.bind(this);
+  }
+
+  callback(date: Date) {
+    this.date = date.toISOString();
+    this.getPosts();
+  }
 
   public getPosts() {
     this.loading=true;

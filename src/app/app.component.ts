@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Example';
+  title = 'Product Hunt Posts Viewer';
+  today = new Date();
 }
