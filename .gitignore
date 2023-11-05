@@ -53,3 +53,4 @@ notes.md
 /vscode.backup
 src/app/app-test*
 src/app-old/
+src/app-example-*/
