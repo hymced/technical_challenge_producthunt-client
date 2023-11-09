@@ -11,10 +11,12 @@ import { environment } from "src/environments/environment";
  })
 export class PostsService { 
 
-   baseURL:string="https://technical-challenge-producthunt.adaptable.app/api/";
-   // baseURL:string=environment.API_URL || "http://localhost:5000/api/";
+   // baseURL:string="https://technical-challenge-producthunt.adaptable.app/api/";
+   baseURL:string=environment.API_URL || "http://localhost:5000/api/";
 
-   constructor(private http:HttpClient) {};
+   constructor(private http:HttpClient) {
+      console.log(this.baseURL)
+   };
 
    getPosts(date:string): Observable<PostsData> {
       const params = new HttpParams().set('date', date);

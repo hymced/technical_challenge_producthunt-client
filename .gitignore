@@ -42,15 +42,18 @@ testem.log
 Thumbs.db
 
 # Misc
+.env
 notes.md
 *notes.txt
 *.docu
 *.docu.ts
 *.docu.html
 *.docu.json
+*.docu[0-9]*.json
 *.docu[0-9]*.ts
 *.docu[0-9]*.html
 /vscode.backup
 src/app/app-test*
 src/app-old/
 src/app-example-*/
+*.docu.app.json
