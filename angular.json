@@ -31,7 +31,7 @@
             "scripts": [],
 
             "customWebpackConfig": {
-              "path": "src/custom-webpack-dev.config.ts"
+              "path": "src/custom-webpack.config.ts"
             }
 
           },
