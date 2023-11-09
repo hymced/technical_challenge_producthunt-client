@@ -11,7 +11,7 @@ import { environment } from "src/environments/environment";
  })
 export class PostsService { 
 
-   baseURL:string="https://technical-challenge-producthunt.netlify.app/api/";
+   baseURL:string="https://technical-challenge-producthunt.adaptable.app/api/";
    // baseURL:string=environment.API_URL || "http://localhost:5000/api/";
 
    constructor(private http:HttpClient) {};
